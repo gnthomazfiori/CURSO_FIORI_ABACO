@@ -1,7 +1,90 @@
-<mvc:View controllerName="zcursoappgnt.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+<mvc:View
+    controllerName="zcursoappgnt.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <Button
+                id="_IDGenButton1"
+                text="Default"
+                press="onPress"
+                ariaDescribedBy="defaultButtonDescription genericButtonDescription"
+            >
+                <layoutData>
+                    <FlexItemData
+                        id="_IDGenFlexItemData1"
+                        growFactor="1"
+                    />
+                </layoutData>
+            </Button>
+            <Button
+                id="_IDGenButton2"
+                type="Accept"
+                text="Accept"
+                press="onPress"
+                ariaDescribedBy="acceptButtonDescription genericButtonDescription"
+            >
+                <layoutData>
+                    <FlexItemData
+                        id="_IDGenFlexItemData2"
+                        growFactor="1"
+                    />
+                </layoutData>
+            </Button>
+            <Button
+                id="_IDGenButton3"
+                type="Reject"
+                text="Reject"
+                press="onPress"
+                ariaDescribedBy="rejectButtonDescription genericButtonDescription"
+            >
+                <layoutData>
+                    <FlexItemData
+                        id="_IDGenFlexItemData3"
+                        growFactor="1"
+                    />
+                </layoutData>
+            </Button>
+            <Button
+                id="_IDGenButton4"
+                text="Coming Soon"
+                press="onPress2"
+                ariaDescribedBy="comingSoonButtonDescription genericButtonDescription"
+                enabled="true"
+            >
+                <layoutData>
+                    <FlexItemData
+                        id="_IDGenFlexItemData4"
+                        growFactor="1"
+                    />
+                </layoutData>
+            </Button>
+            <!-- teste -->
+            <l:VerticalLayout
+                id="_IDGenVerticalLayout1"
+                class="sapUiContentPadding"
+                width="100%"
+            >
+                <Input
+                    id="_IDGenInput1"
+                    value=""
+                    description="TESTE DESCRIÇÃO"
+                    width="1000px"
+                    fieldWidth="20%"
+                    class="sapUiSmallMarginBottom"
+                />
+                <core:InvisibleText
+                    id="descriptionNodeId"
+                    text="Additional input description refferenced by aria-describedby."
+                />
+            </l:VerticalLayout>
+        </content>
     </Page>
 </mvc:View>
