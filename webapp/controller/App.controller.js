@@ -7,7 +7,9 @@ sap.ui.define(
   
       return BaseController.extend("zcursoappgnt.controller.controller.App", {
         onInit() {
+
         }
+
       });
     }
   );
