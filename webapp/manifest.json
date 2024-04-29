@@ -92,6 +92,7 @@
         "controlId": "app",
         "clearControlAggregation": false
       },
+
       "routes": [
         {
           "name": "RouteView1",
@@ -99,16 +100,52 @@
           "target": [
             "TargetView1"
           ]
+        },
+
+        {
+          "name": "RouteView2",
+          "pattern": "view2",
+          "target": [
+            "TargetView2"
+          ]
+        },
+        
+        {
+          "name" : "RouteDetalhe",
+          "pattern": "Detalhe/{id}",
+          "target": [
+            "TargetDetalhe"
+          ]
         }
+
       ],
-      "targets": {
+
+      "targets": 
+      {
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View2",
+          "viewName": "View2"
+        },
+
+        "TargetDetalhe": {
+          "viewType": "XML",
+          "transition": "flip",
+          "clearControlAggregation": false,
+          "viewId": "Detalhe",
+          "viewName": "Detalhe"
         }
+
       }
     },
     "rootView": {
